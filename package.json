@@ -1,0 +1,35 @@
+{
+  "name": "honeychain",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"npm run dev:api\"",
+    "start:all": "node scripts/start-all.js",
+    "dev:api": "node backend/server.js",
+    "build": "vite build",
+    "test": "hardhat test",
+    "chain": "hardhat node",
+    "deploy": "hardhat run blockchain/scripts/deploy.js --network localhost"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "ethers": "^6.13.5",
+    "express": "latest",
+    "jsqr": "^1.4.0",
+    "lucide-react": "latest",
+    "qrcode": "^1.5.4",
+    "qrcode.react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "recharts": "latest"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.18",
+    "vite": "latest"
+  }
+}

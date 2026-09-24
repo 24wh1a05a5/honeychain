@@ -1,0 +1,6 @@
+HoneyChain Demo Account
+
+Email: maya@example.com
+Password: demo123
+
+For local demo/testing only. Do not use these credentials on a real network.
