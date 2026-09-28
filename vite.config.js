@@ -7,5 +7,10 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     proxy: { '/api': 'http://localhost:4000' }
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 4173,
+    allowedHosts: ['honeychain-frontend-irg7.onrender.com']
   }
 })
